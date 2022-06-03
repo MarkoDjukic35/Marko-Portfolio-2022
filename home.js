@@ -25,9 +25,7 @@ open.addEventListener("click", function() {
 
 // Close Menu when click on Link
 
-$('.menu li a').on("click", function() {
-    $('#hamburger').click();
-});
+
 
 
 
