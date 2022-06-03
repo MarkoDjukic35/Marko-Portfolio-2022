@@ -165,7 +165,7 @@ nav ul li a::after {
     top: 0;
     bottom: 0;
     transition: opacity 650ms;
-    transform: scale(1);
+    transform: scale(0);
     opacity: 0;
 }
 
@@ -682,16 +682,6 @@ figure figcaption button {
             letter-spacing: 0px;
         }
     }
-    .menu-toggle {
-        position: fixed;
-        top: 2.5rem;
-        right: 2.5rem;
-        color: #eeeeee;
-        font-size: 3rem;
-        cursor: pointer;
-        z-index: 1000;
-        
-    }
     .typing-slider {
         font-family: Consolas, monospace;
         font-weight: bold;
@@ -912,7 +902,7 @@ figure figcaption button {
         background: rgb(128, 128, 255) url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
         box-shadow: 0 0.25rem 0.5rem 0 gray;
         opacity: 0.7;
-        z-index: 1;
+        z-index: 100;
     }
     /*Button to top*/
     #gmap_canvas {
