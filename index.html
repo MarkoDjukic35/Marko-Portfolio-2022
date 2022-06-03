@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marko-Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+
+</head>
+
+<body>
+    <!--Button to top-->
+    <a href='#' class="stt" title="scroll to top"></a>
+    <!--Button to top-->
+    <!--Menu-->
+
+
+    <header>
+        <h1 class="logo-mob">Marko Djukic<br><span>Web Entwickler</span></h1>
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <img class="logo1" src="Bilder/logo.jpg" alt="">
+            <nav>
+                <img class="logo" src="Bilder/logo.jpg" alt="">
+                <h1 class="brand"><a href="index.html">Marko Djukic<br><span>Web Entwickler</span></a>
+                </h1>
+
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#skills1">Skills</a></li>
+                    <li><a href="#projekte1">Projekte</a></li>
+                    <li><a href="#kontakt1">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Menu-->
+
+    <img class="logo2" src="Bilder/logo.jpg" alt="">
+    <!--Hero Section-->
+    <div class="typing-slider">
+        <p>Ich bin ein Web Entwickler</p>
+    </div>
+    <div class="gif">
+        <img src="Bilder/gif2.gif" alt="">
+    </div>
+    <!--Hero Section-->
+
+    <!--Skills Section-->
+
+
+
+    <div>
+        <img class="skills-bild2" src="Bilder/skills-bild2.gif" alt="">
+    </div>
+
+
+    <div class="skills">
+        <p id="skills1"></p>
+        <h2>Skills</h2>
+    </div>
+
+
+
+
+    <div class="container">
+        <!------------------------------------------------------------>
+        <div class="div" data-aos="flip-up" data-aos-duration="1000" data-aos-once="false">
+            <img class="skills-img1" src="Bilder/html.png">
+            <h2 class="skill-h2"> HTML 5 </h2>
+        </div>
+        <!--------------------------------------------------------------->
+        <div class="div" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
+            <img class="skills-img1" src="Bilder/css1.png" alt="">
+            <h2 class="skill-h2"> CSS 3 </h2>
+        </div>
+        <!-------------------------------------------------------------->
+        <div class="div" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-once="false">
+            <img class="skills-img1" src="Bilder/js1.png" alt="">
+            <h2 class="skill-h2"> Java Script </h2>
+        </div>
+        <!-- ------------------------------------------------------------->
+        <div class="div" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
+            <img class="skills-img1" src="Bilder/wp1.png" alt="">
+            <h2 class="skill-h2"> WordPress </h2>
+        </div>
+        <!-- ------------------------------------------------------------->
+        <div class="div" data-aos="flip-left" data-aos-duration="1000" data-aos-once="false">
+            <img class="skills-img1" src="Bilder/ps1.png" alt="">
+            <h2 class="skill-h2"> PhotoShop </h2>
+        </div>
+        <!-- ------------------------------------------------------------->
+        <div class="div" data-aos="flip-up" data-aos-duration="1000" data-aos-once="false">
+            <img class="skills-img1" src="Bilder/ai1.png" alt="">
+            <h2 class="skill-h2"> Illustarator </h2>
+        </div>
+        <!-- ------------------------------------------------------------->
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+            once: false,
+        });
+    </script>
+    <!--Skills Section-->
+
+
+    <!--Projekte Section-->
+
+
+    <div class="projekte-naslov">
+        <p id="projekte1"></p>
+        <h2>Projekte</h2>
+    </div>
+
+    <div class="grid-projekte">
+        <figure class="image-block">
+            <h1>JSD Marketing</h1>
+            <img style="-webkit-filter: opacity(.4);
+        filter: opacity(.4);" src="Bilder/projekt1.png" alt="" />
+            <figcaption>
+                <h3>
+                    More Info
+                </h3>
+                <p>Technology - WordPress<br>Page Builder - Divi</p>
+                <button style="cursor: pointer;" onclick="window.location.href = 'https://jsd.marketing/';">Seite Visit</button>
+            </figcaption>
+        </figure>
+
+        <figure class="image-block">
+            <h1>Prostaff</h1>
+            <img style="-webkit-filter: opacity(.4);
+        filter: opacity(.4);" src="Bilder/projekt2.png" alt="" />
+            <figcaption>
+                <h3>
+                    More Info
+                </h3>
+                <p>Technology - WordPress<br>Page Builder - Elementor + WooCommerce</p>
+                <button style="cursor: pointer;" onclick="window.location.href = 'https://www.prostaff.at/';">Seite Visit</button>
+            </figcaption>
+        </figure>
+
+        <figure class="image-block">
+            <h1>Schaumweinkontor</h1>
+            <img style="-webkit-filter: opacity(.4);
+        filter: opacity(.4);" src="Bilder/projekt3.png" alt="" />
+            <figcaption>
+                <h3>
+                    More Info
+                </h3>
+                <p>Technology - WordPress<br>Custom Theme + WooCommerce</p>
+                <button style="cursor: pointer;" onclick="window.location.href = 'https://schaumweinkontor.com/';">Seite Visit</button>
+            </figcaption>
+        </figure>
+    </div>
+    <!--Projekte Section-->
+
+    <!--Kontakt Section-->
+
+
+    <div class="kontakt-naslov">
+        <p id="kontakt1"></p>
+        <h2>Kontakt</h2>
+        <img src="Bilder/kontakt.webp" alt="">
+
+    </div>
+
+
+
+
+
+    <div class="kontakt-kontainer">
+
+        <div class="kontakt-daten">
+            <h2>Marko Djukic<br><span style="color: red; font-size: 25px;">Web Enwickler</span></h2><br>
+
+
+
+
+            <h3><a href="mailto:marko.djukic.bn@hotmail.com"><i class="far fa-envelope" style=" font-size: 28px;color: red;"></i><span style="padding-left: 20px;">marko.djukic.bn@hotmail.com</span></a>
+            </h3>
+
+            <h3><a href="tel:+436605599243"><i class="fa fa-phone" style="font-size:28px;color:red"></i><span style="padding-left: 20px;"></span>+43 660 55 99 243</a></h3>
+
+
+        </div>
+
+
+
+
+
+        <div class="kontakt-grid1">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="800" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2544&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://123movies-to.org"></a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 500px;
+                            width: 800px;
+                        }
+                    </style>
+                    <a href="https://www.embedgooglemap.net"></a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none!important;
+                            height: 500px;
+                            width: 800px;
+                        }
+                    </style>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--Kontakt Section-->
+
+    <!--Footer Section-->
+
+    <div class="footer">
+        <h2>Copyright © 2022 Marko Djukic</h2>
+    </div>
+
+    <!--Footer Section-->
+
+    <script src="home.js"></script>
+
+
+</body>
+
+</html>
