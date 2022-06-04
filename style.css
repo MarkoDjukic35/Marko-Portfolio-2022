@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 @import url("https://fonts.googleapis.com/css?family=Lato:700");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
     scroll-behavior: smooth;
 }
@@ -44,181 +46,95 @@ html {
 }
 
 
-/*Menu*/
+/*Menu section*/
 
-a {
+#rc_logo {
+    left: 30px;
+    padding: 42px;
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    font-family: Poppins;
     text-decoration: none;
-    color: #eee;
 }
 
-header {
-    width: 100%;
-    background-color: #4C4C4C;
-    background-size: cover;
-    position: relative;
+#rc_logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.rc_nav {
     overflow: hidden;
-    /*background-image: url("Bilder/background1.gif");*/
+    background-color: #4C4C4C;
+    text-align: center;
+    z-index: 6;
+    margin-left: 10vw;
 }
 
-.container {
-    max-width: 120rem;
-    width: 90%;
-    margin: 0 auto;
+.rc_nav a {
+    display: inline-block;
+    margin-right: -4px;
+    /* inline-block gap fix */
+    color: #fff;
+    padding: 22px 22px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 18px;
+    -webkit-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -ms-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    transition: background 0.3s linear;
+    z-index: 9;
 }
 
-.menu-toggle {
-    position: fixed;
-    top: 2.5rem;
-    right: 2.5rem;
-    color: #eeeeee;
-    font-size: 3rem;
-    cursor: pointer;
-    z-index: 1000;
+.rc_nav a:hover {
+    background-color: #575b69;
+    color: red;
+}
+
+.rc_nav .icon {
     display: none;
 }
 
-nav {
-    padding-top: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 1.6rem;
+.rc_content {
+    text-align: center;
+    padding-left: 14px;
+    font-family: Poppins;
+    margin-top: 100px;
+    color: #8e909b;
 }
 
-.brand {
-    font-size: 3rem;
-    font-weight: 300;
-    transform: translateX(-100rem);
-    animation: slideIn .5s forwards;
-}
-
-.brand span {
-    color: crimson;
-    font-size: large;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    list-style: none;
-    transform: translateX(100rem);
-    animation: slideIn .5s forwards;
-}
-
-nav ul li:nth-child(1) {
-    animation-delay: 0s;
-}
-
-nav ul li:nth-child(2) {
-    animation-delay: .5s;
-}
-
-nav ul li:nth-child(3) {
-    animation-delay: 1s;
-}
-
-nav ul li:nth-child(4) {
-    animation-delay: 1.5s;
-}
-
-nav ul li a {
-    padding: 1rem 0;
-    margin: 0 3rem;
-    position: relative;
-    letter-spacing: 2px;
-}
-
-nav ul li a:last-child {
-    margin-right: 0;
-}
-
-nav ul li a::before,
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: crimson;
-    left: 0;
-    transform: scaleX(0);
-    transition: all .5s;
-}
-
-nav ul li a::before {
-    top: 0;
-    transform-origin: left;
-}
-
-nav ul li a::after {
-    bottom: 0;
-    transform-origin: right;
-}
-
-.overlay {
-    background-color: rgba(0, 0, 0, .95);
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    transition: opacity 650ms;
-    transform: scale(0);
-    opacity: 0;
-}
-
-nav ul li a:hover::before,
-nav ul li a:hover::after {
-    transform: scaleX(1);
-}
-
-@keyframes slideIn {
-    from {}
-    to {
-        transform: translateX(0);
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .menu-toggle {
-        display: block;
-    }
-    nav {
-        padding-top: 0;
+@media screen and (max-width: 820px) {
+    .rc_nav a {
         display: none;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 70vh;
+    }
+    .rc_nav a.icon {
+        float: right;
+        display: block;
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .rc_nav.responsive {
+        position: relative;
+        top: 73px;
+    }
+    .rc_nav.responsive .icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    .rc_nav.responsive a {
+        float: none;
+        display: block;
         text-align: center;
     }
-    nav ul {
-        flex-direction: column;
-    }
-    nav ul li {
-        margin-top: 2rem;
-    }
-    nav ul li a {
-        margin: 0;
-        font-size: 2rem;
-    }
-    .brand {
-        font-size: 5rem;
-    }
-    .overlay.menu-open,
-    nav.menu-open {
-        display: flex;
-        transform: scale(1);
-        opacity: 5;
-        position: fixed;
-        z-index: 100;
-    }
 }
 
 
-/*Menu*/
+/*Menu section*/
 
 
 /*Hero section*/
@@ -385,9 +301,10 @@ nav ul li a:hover::after {
 }
 
 .container {
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
     width: 100%;
+    margin-left: 15%;
 }
 
 .div {
@@ -395,8 +312,8 @@ nav ul li a:hover::after {
     height: 30vw;
     width: 65vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
     background: linear-gradient(to right, #1cd8d2, #93edc7);
     color: white;
     margin: 250px 25px 25px 25px;
@@ -642,6 +559,7 @@ figure figcaption button {
 #gmap_canvas {
     max-width: 100%;
     height: 70%;
+    padding-top: 40px;
 }
 
 .footer {
@@ -681,6 +599,18 @@ figure figcaption button {
             font-size: 8vw;
             letter-spacing: 0px;
         }
+    }
+    .logo11 {
+        display: none;
+    }
+    #rc_logo {
+        left: 3px;
+        padding: 2px;
+        position: absolute;
+        color: #fff;
+        font-size: 20px;
+        font-family: Poppins;
+        text-decoration: none;
     }
     .typing-slider {
         font-family: Consolas, monospace;
@@ -760,6 +690,7 @@ figure figcaption button {
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-left: 0%;
     }
     .brand a {
         font-size: 4rem;
@@ -772,6 +703,7 @@ figure figcaption button {
         padding-left: 20%;
     }
     .container ul {
+        margin-top: -10px;
         margin-left: 0%;
     }
     .div {
