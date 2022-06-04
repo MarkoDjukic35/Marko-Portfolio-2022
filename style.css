@@ -724,7 +724,7 @@ figure figcaption button {
         align-items: center;
         background: linear-gradient(to right, #1cd8d2, #93edc7);
         color: white;
-        margin: 25px 25px 25px 25px;
+        margin: 25px 25px 25px 20px;
         border-radius: 7px;
         margin-left: 20%;
     }
