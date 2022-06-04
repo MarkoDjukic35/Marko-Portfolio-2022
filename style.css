@@ -71,6 +71,16 @@ html {
     margin-left: 10vw;
 }
 
+.menu-toggle {
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    color: #eeeeee;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
 .rc_nav a {
     display: inline-block;
     margin-right: -4px;
@@ -841,7 +851,6 @@ figure figcaption button {
         padding-right: 0%;
         padding-left: 0%;
         margin-bottom: 10vw;
-        
     }
     .mapouter {
         padding-right: 0%;
