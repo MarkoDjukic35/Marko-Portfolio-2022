@@ -66,6 +66,17 @@ header {
     margin: 0 auto;
 }
 
+.menu-toggle {
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    color: #eeeeee;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
 nav {
     padding-top: 5rem;
     display: flex;
