@@ -82,6 +82,11 @@ html {
     z-index: 1000;
 }
 
+.menu-toggle::-webkit-scrollbar {
+    display: none !important;
+    /* Safari and Chrome */
+}
+
 .rc_nav a {
     display: inline-block;
     margin-right: -4px;
