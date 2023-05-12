@@ -225,7 +225,7 @@ html {
 
 .typing-slider p:nth-child(1)::after {
     animation-delay: 0s;
-    animation-timing-function: steps(26), step-end;
+    animation-timing-function: steps(22), step-end;
 }
 
 .typing-slider p:nth-child(2) {
